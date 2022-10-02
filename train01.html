@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  -->
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: aliceblue;
+        }
+/*  */
+        .flex{
+            display: flex;
+        }
+        .baise{
+            background-color: white;
+            box-shadow: rgb( 0 0 0 / 20% ) 0px 2px 1px -1px,
+            rgb( 0 0 0 /14% ) 0px 1px 1px 0px,rgb(0 0 0 /12%) 0px 1px 3px 0px;
+        }
+        .flex1{
+            flex: 1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .mg8{
+            margin: 8px;
+        }
+        .mgr8{
+            margin-right: 8px;
+        }
+        .mgt8{
+            margin-top: 8px;
+        }
+        .yingying{
+            box-shadow: rgb( 0 0 0 / 20% ) 0px 2px 1px -1px,
+            rgb( 0 0 0 /14% ) 0px 1px 1px 0px,rgb(0 0 0 /12%) 0px 1px 3px 0px;
+        }
+        .daohang{
+            padding: 10px 20px;
+            border-bottom: 1px solid grey;
+            font-size: 14px;
+            color: rgb(255, 136, 0);
+        }
+        @media(max-width:600px){
+            .cebianlan{
+                display: none;
+            }
+            .neironglan{
+                flex-direction: column;
+            }
+            .youqu{
+                margin-left :5px;
+                margin-right: 5px;
+            }
+            .shuju{
+                margin: 0 0 8px;
+                flex:auto;
+            }
+        }
+    </style>
+</head>
+<body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px;z-index: 2;"class="cebianlan baise yingying">
+    <!-- touxianglan -->
+    <div 
+        style="
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #999;
+            "
+        class="flex">
+        <img src="https://upfile2.asqql.com/upfile/hdimg/hdimg_s/2016-2/1/152113AKDvMFA5wd.jpg" width="60px" alt="图片">
+        <!-- touxiangshuoming -->
+        <div style="margin: 10px;">风景</div>
+    </div>
+    <!-- daohang -->
+        <div class="flex1">
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+        </div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex1 flex column">
+        <!-- 头部栏 -->
+        <div style="height: 60px;z-index: 1;" class="baise"></div>
+        <!-- 内容区 -->
+        <div style="overflow:auto;" class="neironglan flex1 flex">
+            <!-- 左区 -->
+            <div style="flex:3" class=" flex column mg8">
+            <!-- 数据区 -->
+            <div class="flex neironglan">
+            <!-- 数据块 -->
+            <div style="height: 100px;" class="shuju flex1 baise mgr8"></div>
+            <div style="height: 100px;" class="shuju flex1 baise mgr8"></div>
+            <div style="height: 100px;" class="shuju flex1 baise mgr8"></div>
+            <div style="height: 100px;" class="shuju flex1 baise"></div>
+            </div>
+        <!-- liebiaoqu -->
+        <div class="flex column">
+            <!-- liebiaox -->
+            <div style="height: 160px;" class="baise mgt8"></div>
+            <div style="height: 160px;" class="baise mgt8"></div>
+            <div style="height: 160px;" class="baise mgt8"></div>
+            <div style="height: 160px;" class="baise mgt8"></div>
+            <div style="height: 160px;" class="baise mgt8"></div>
+            <div style="height: 160px;" class="baise mgt8"></div>
+            <div style="height: 160px;" class="baise mgt8"></div>
+            <div style="height: 160px;" class="baise mgt8"></div>
+        </div>
+        </div>
+            <!-- 右区 -->
+            <div style="flex:1" class="youqu flex column">
+            <!-- tip -->
+            <div style="height: 150px;" class="youqu baise"></div>
+            <!-- mit -->
+            <div style="height:300px;" class="youqu baise mgt8">
+        </div>
+    </div>
+</body>
+</html>
