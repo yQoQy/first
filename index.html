@@ -1,59 +1,91 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <title>秋水的个人网站</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>秋水的个人网站</title>
+    <meta name="description" content="公开的我">
+    <style>
+        body{
+            margin: 0px;
+            height: 100vh;
+            background-color: rgba(240, 248, 255,0.8);
+        }
+        .flex{
+            display: flex;
+        }
+        .beijingse1{
+            background-color: rgba(214, 241, 243, 0.819);
+        }
+        .beijingse2{
+            background-color: rgba(240, 255, 255,0.8);
+        }
+        .beijingse3{
+            background-color: rgba(0, 255, 255,0.6);
+        }
+        .juzhong{
+            justify-content:space-around;
+            align-items: center;
+        }
+        .flex1{
+            flex: 1;
+        }
+        .flex3{
+            flex: 3;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .yingying{
+            box-shadow: rgb( 0 0 0 / 20% ) 0px 2px 1px -1px,
+                rgb( 0 0 0 /14% ) 0px 1px 1px 0px,rgb(0 0 0 /12%) 0px 1px 3px 0px
+            }
+        .bianju{
+            padding: 40px;
+        }
+    </style>
+    <script></script>
 </head>
-<body>
-    <div>
-    <div style="
-        background-color: aquamarine;
-        margin: 0px;
-        border:50px;
-        padding: 50px;
-        text-align: center;
-        display: flex;">
-            <img src="wu" alt="图片占位" width="66" height="66">
-            <h1 >顶部栏占位</h1>
+<body class="flex column">
+    <!-- 顶部导航栏 -->
+    <div class="flex yingying" style="height: 100px;">
+        <!-- 头像 -->
+        <div class="flex beijingse1 flex1 juzhong yingying">
+            <img src="https://yqoqy.github.io/first/touxiang1.png" alt="头像" width="66px" height="66px" style="margin: 5px;border: 5px;padding: 5px;">
+        </div>
+        <!-- 头像右侧导航键-->
+        <div class="flex flex3 beijingse1 yingying" style="justify-content: space-around;">
+            <!-- 首页 -->
+            <div class="flex bianju">
+                <a href="https://yqoqy.github.io/first/" class="">首页</a>
+            </div>
+            <div class="flex bianju">
+                <a href="">关于我</a>
+            </div>
+            <div class="flex bianju">
+                <a href="">秋水</a>
+            </div>
+            <div class="flex bianju">
+                <a href="">无何有之乡</a>
+            </div>
+            <div class="flex bianju">
+                <a href="">广莫之野</a>
+            </div>
+        </div>
     </div>
-    <!-- 这是顶部盒子 -->
-    <div style="
-    margin:auto;
-    border: 0px;
-    padding: 10%;
-    background-color: aqua;
-    text-align: light
-">
-    <article style="max-width:80%;
-    word-wrap:break-word;
-    background-color:aliceblue"
-     >      
-        <p>测试25555555555555555555555555555555555555557458888888888888888888888888888888888888888888888888888888888888888888823331111111111111111111111111111111111111111111111111111111111111111
-        </p>
-        <p>测试oignrnvernboierjgviodfjkomvoifjgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
-        </p>
-        <p>测试<br>哦i遏必恭而安率27778888888888888888888888888888888888888888888888888888888888888888888888888888888男女i哦而那边v妇女节你哦额外给能够i让给人工介入机构i任何能够i额日哦热加工i二极管i哦热加工ii人家不够i热就别覅欧冠v进而哦i感觉i哦v能不能地哦加哦i二进宫欸热加工二偶尔几个v哦i二进宫俄日机构i二进宫i4   
-        </p>
-    </article>
-    <!-- 数字和英文即使用了max-width也不会自动换行，必须加word-wrap：break-word -->
+    <!-- 显示主体 -->
+    <div class="flex flex1 beijingse2 yingying" style="justify-content: center;">
+        <div class="flex yingying" style="justify-content: center; width: 700px; text-align: center;">
+            <article style="width: 600px;">广告位</article>
+        </div>
+        <!-- 数字和英文即使用了max-width也不会自动换行，必须加word-wrap：break-word -->
     </div>
-    <!-- 这是中部盒子 -->
-    <div style="
-    margin: 0px;
-    border: 50px;
-    padding: 50px;
-    background-color: bisque;
-    text-align: center;">
+    <!-- 底部链接栏 -->
+    <div class="flex juzhong beijingse3 yingying" style="height: 100px;">
      <a href="daiding">友情链接占位</a>
     <a href="zhanwei">友情链接占位</a>
-    <div><a href="beian">公安备案占位</a></div>
-    <div><a href="beianwangzhan">公安备案占位</a></div>
     </div>
-    <!-- 这是底部盒子 -->
-</div>
-<!-- 这是最外大盒子，打算找个方法放个图片，以及调节上两个盒子的透明度 -->
 </body>
 </html>
